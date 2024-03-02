@@ -45,7 +45,7 @@ magnetic_field_grid = np.array(magnetic_field_values).reshape(len(x_values), len
 
 # Plot the contour plot of the magnetic field
 plt.figure(figsize=(10, 8))
-contour = plt.contour(x_values, y_values, magnetic_field_grid, levels=1000, cmap='viridis')
+contour = plt.contour(x_values, y_values, magnetic_field_grid, levels=500, cmap='viridis')
 plt.colorbar(contour, label='Magnetic Field (A/m)')
 plt.title('Contour Plot of Magnetic Field Distribution')
 plt.xlabel('X-coordinate')
